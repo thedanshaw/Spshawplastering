@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.P. Shaw Plastering | Professional Plastering Services in North West</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(245,245,245,0.9) 0%, rgba(220,220,220,0.8) 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8f8f8 100%);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #d1a054;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .floating-button {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="S.P. Shaw Plastering Logo" class="h-12 w-12 rounded-full">
+                    <span class="ml-3 text-xl font-bold text-gray-800">S.P. Shaw Plastering</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-amber-700">Home</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-amber-700">Services</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-amber-700">Gallery</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-amber-700">About</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-amber-700">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20 md:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gray-900 opacity-20"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Professional Plastering Services in the North West</h1>
+                    <p class="text-lg text-gray-700 mb-8">Delivering high-quality plastering solutions with over 15 years of experience. Perfect finishes for your home or business.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg text-center font-medium transition duration-300">Get a Free Quote</a>
+                        <a href="tel:+447887758845" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white px-6 py-3 rounded-lg text-center font-medium transition duration-300">
+                            <i class="fas fa-phone mr-2"></i> 07887 758845
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Plastering work" class="rounded-lg shadow-xl w-full h-auto">
+                        <div class="absolute -bottom-5 -right-5 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="bg-amber-100 p-3 rounded-full mr-3">
+                                    <i class="fas fa-award text-amber-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gray-800">15+ Years</p>
+                                    <p class="text-sm text-gray-600">Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of plastering services to meet all your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Plastering" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-home text-amber-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Domestic Plastering</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">High-quality plastering for homes, including walls, ceilings, and decorative finishes.</p>
+                        <a href="#contact" class="text-amber-600 font-medium hover:text-amber-700 transition duration-300">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Commercial Plastering" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-building text-amber-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Commercial Plastering</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Professional plastering services for businesses, offices, and commercial properties.</p>
+                        <a href="#contact" class="text-amber-600 font-medium hover:text-amber-700 transition duration-300">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Renovation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-hammer text-amber-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Renovation & Repair</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Expert repair and renovation services to restore your walls and ceilings to perfection.</p>
+                        <a href="#contact" class="text-amber-600 font-medium hover:text-amber-700 transition duration-300">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Work</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Browse through our portfolio of completed projects</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Plastering project 1" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Plastering project 2" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Plastering project 3" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600566752227-86840c5d7e5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Plastering project 4" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Plastering project 5" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Plastering project 6" class="w-full h-64 object-cover transition duration-500 hover:scale-105">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                    View Full Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About S.P. Shaw Plastering</h2>
+                    <div class="w-20 h-1 bg-amber-500 mb-6"></div>
+                    <p class="text-gray-600 mb-4">With over 15 years of experience in the plastering industry, Stuart Shaw brings unparalleled expertise to every project. Based in the North West, we serve both residential and commercial clients with a commitment to quality and customer satisfaction.</p>
+                    <p class="text-gray-600 mb-6">Our attention to detail and dedication to craftsmanship ensures that every job is completed to the highest standards, leaving you with smooth, flawless surfaces that stand the test of time.</p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="bg-amber-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-amber-600"></i>
+                            </div>
+                            <span class="text-gray-700">Fully Insured</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-amber-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-amber-600"></i>
+                            </div>
+                            <span class="text-gray-700">Competitive Pricing</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-amber-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-amber-600"></i>
+                            </div>
+                            <span class="text-gray-700">Free Quotes</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 inline-block">
+                        Get in Touch
+                    </a>
+                </div>
+                
+                <div class="md:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Stuart Shaw" class="rounded-lg shadow-xl w-full h-auto">
+                    <div class="absolute -bottom-5 -left-5 bg-white p-6 rounded-lg shadow-lg hidden md:block max-w-xs">
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-user-tie text-amber-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Stuart Shaw</h4>
+                                <p class="text-sm text-gray-600">Founder & Master Plasterer</p>
+                                <div class="flex space-x-3 mt-3">
+                                    <a href="https://www.facebook.com/share/1YBDsGfmfs/" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/s.p.shawplastering?igsh=OXI2YWdoZGpmZnN2" class="text-gray-600 hover:text-pink-600 transition duration-300">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/stuart-shaw-9203661b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Stuart did an amazing job plastering our entire house. The finish is flawless and he was incredibly professional throughout. Highly recommend S.P. Shaw Plastering!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah J.</h4>
+                            <p class="text-sm text-gray-600">Manchester</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"We've used Stuart for several projects now and he never disappoints. His attention to detail is second to none and he always leaves the site spotless."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael T.</h4>
+                            <p class="text-sm text-gray-600">Liverpool</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"The team transformed our office space with their plastering work. Professional, punctual and perfectionists when it comes to their craft. Will definitely use again."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emma R." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emma R.</h4>
+                            <p class="text-sm text-gray-600">Preston</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Ready to start your plastering project? Contact us today for a free quote.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition duration-300" placeholder="John Smith">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition duration-300" placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition duration-300" placeholder="07887 758845">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Required</label>
+                            <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition duration-300">
+                                <option value="">Select a service</option>
+                                <option value="domestic">Domestic Plastering</option>
+                                <option value="commercial">Commercial Plastering</option>
+                                <option value="renovation">Renovation & Repair</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Project Details</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition duration-300" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Location</h4>
+                                    <p class="text-gray-600">Serving the North West region</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Phone</h4>
+                                    <a href="tel:+447887758845" class="text-gray-600 hover:text-amber-600 transition duration-300">07887 758845</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                    <a href="mailto:pl@stering.com" class="text-gray-600 hover:text-amber-600 transition duration-300">pl@stering.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Working Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 8am - 6pm</p>
+                                    <p class="text-gray-600">Saturday: 9am - 2pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/share/1YBDsGfmfs/" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-700 transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com/s.p.shawplastering?igsh=OXI2YWdoZGpmZnN2" class="bg-gray-200 hover:bg-pink-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-700 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/stuart-shaw-9203661b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="bg-gray-200 hover:bg-blue-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-700 transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-amber-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Space?</h2>
+            <p class="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">Contact us today for a free, no-obligation quote on your plastering project.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="tel:+447887758845" class="bg-white hover:bg-gray-100 text-amber-600 px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i> Call Now
+                </a>
+                <a href="#contact" class="border-2 border-white hover:bg-white hover:text-amber-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
+                    Get a Free Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="S.P. Shaw Plastering Logo" class="h-10 w-10 rounded-full mr-3">
+                        <span class="text-xl font-bold">S.P. Shaw Plastering</span>
+                    </div>
+                    <p class="text-gray-400">Professional plastering services in the North West, delivering quality finishes for over 15 years.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-amber-400 transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-amber-400 transition duration-300">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-amber-400 transition duration-300">Gallery</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-amber-400 transition duration-300">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-amber-400 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Domestic Plastering</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Commercial Plastering</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Renovation & Repair</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Decorative Finishes</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">North West, UK</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-amber-400 mr-3"></i>
+                            <a href="tel:+447887758845" class="text-gray-400 hover:text-amber-400 transition duration-300">07887 758845</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-amber-400 mr-3"></i>
+                            <a href="mailto:pl@stering.com" class="text-gray-400 hover:text-amber-400 transition duration-300">pl@stering.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 S.P. Shaw Plastering. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com/share/1YBDsGfmfs/" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/s.p.shawplastering?igsh=OXI2YWdoZGpmZnN2" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/stuart-shaw-9203661b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-400 hover:text-amber-400 transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#contact" class="floating-button bg-amber-600 hover:bg-amber-700 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-xl transition duration-300">
+            <i class="fas fa-envelope text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you shortly.');
+            this.reset();
+        });
+
+        // Mobile menu toggle functionality would go here
+        // This is a basic implementation
+        document.querySelector('.md\\:hidden button').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:hidden + .md\\:flex');
+            if(menu) {
+                menu.classList.toggle('hidden');
+            }
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=thedanshaw/spshaw" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
